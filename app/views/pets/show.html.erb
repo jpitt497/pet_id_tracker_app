@@ -1,0 +1,26 @@
+<div class="container">
+	<div style="text-align:center;">
+			<%=image_tag("#{@pet.pet_name.downcase}.jpg")%>
+	<h1><center><%=@pet.pet_name%><center></h1>
+	</div>
+	<ul class="nav nav-tabs">
+	  <li class="active"><a data-toggle="tab" href="#pet_info">Pet Info</a></li>
+	  <li><a data-toggle="tab" href="#owner_info">Owner Info</a></li>
+	  <li><a data-toggle="tab" href="#vet_info">Vet Info</a></li>
+	</ul>
+
+	<div class="tab-content">
+		<div id="pet_info" class="tab-pane fade in active">
+			<h3>Pet Info<h3>
+			<p>This is my Pet Info</p>
+		</div>
+		<div id="owner_info" class="tab-pane fade">
+			<h3>Owner Info<h3>
+			<p>This is my Owner Info</p>
+		</div>
+		<div id="vet_info" class="tab-pane fade">
+			<h3>Vet Info<h3>
+			<p>This is my Vet Info</p>
+		</div>
+	</div>
+<div>

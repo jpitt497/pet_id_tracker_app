@@ -1,2 +1,26 @@
-<h1>Hello World</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<br>
+<div class="container">
+	<div class="row">
+		<a href="#" class="btn btn-info btn-space pull-right">Sign Up</a>
+		<a href="#" class="btn btn-info btn-space pull-right">Sign In</a>
+	</div>
+	<div class="row" align="center">
+		<h1>Welcome to Pet ID Tracker</h1>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 ">
+			<form action="/pets/show">
+				<div class="form-group">
+					<label for="pet_id"> Input Pet ID</label>
+					<input type="text" class="form-control" name="pet_id" id="pet_id" placeholder="Enter Pet ID">
+					<button type="submit" class="btn btn-success" style="margin-top:20px;">Reteieve Info</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+</html>
