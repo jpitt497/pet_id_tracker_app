@@ -15,4 +15,14 @@ development:
   password:  rails_password
   port: 5432
 
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: petdev
+  pool: 5
+  host: pettrackerdev.cacb5io2qere.us-east-1.rds.amazonaws.com
+  username: rails_app
+  password:  rails_password
+  port: 5432
+
 
